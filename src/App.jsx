@@ -62,11 +62,6 @@ export default function App() {
 
   const openCat = categories.find((c) => c.id === openId) || null
 
-  const scrollToCards = () => {
-    const el = document.getElementById('cards')
-    if (el) el.scrollIntoView({ behavior: 'smooth' })
-  }
-
   return (
     <div className="page">
       <ScrubHero />
@@ -81,9 +76,6 @@ export default function App() {
             />
           </h1>
           <p className="hero__subtitle">Build. Explore. Survive. Imagine.</p>
-          <button className="hero__cta" onClick={scrollToCards}>
-            Start the Challenge
-          </button>
         </header>
 
         <section className="challenges" id="cards">
