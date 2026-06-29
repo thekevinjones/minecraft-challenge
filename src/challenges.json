@@ -1,0 +1,102 @@
+{
+  "categories": [
+    {
+      "id": "survival",
+      "emoji": "🗡️",
+      "title": "Survival Challenges",
+      "blurb": "Gather, build, and fight to make it through in survival mode.",
+      "badge": { "label": "Survivor", "emoji": "🛡️", "color": "#f0915e" },
+      "items": [
+        "Punch a tree and collect wood",
+        "Craft some sticks",
+        "Build any type of house for your first night",
+        "Survive your first night",
+        "Kill one zombie",
+        "Hunt a sheep, a cow, and a chicken for food",
+        "Cook 10 food items",
+        "Find a village within 30 minutes",
+        "Mine your first iron",
+        "Craft a full set of armor",
+        "Mine your first diamonds",
+        "Defeat 3 zombies in one night"
+      ]
+    },
+    {
+      "id": "peaceful",
+      "emoji": "🌸",
+      "title": "Peaceful Challenges",
+      "blurb": "No monsters here — explore, tame, farm, and build in peaceful mode.",
+      "badge": { "label": "Peacekeeper", "emoji": "🕊️", "color": "#7fd0e0" },
+      "items": [
+        "Survive 10 nights in peaceful mode",
+        "Build a cozy starter house",
+        "Make a bed and sleep through the night",
+        "Build a garden (without flying)",
+        "Find a village",
+        "Tame a wolf/dog",
+        "Tame a cat",
+        "Breed two animals",
+        "Build an animal pen or farm",
+        "Grow wheat, carrots, and pumpkins",
+        "Explore a cave and find some ore"
+      ]
+    },
+    {
+      "id": "creative",
+      "emoji": "🏗️",
+      "title": "Creative Challenges",
+      "blurb": "Anything goes in creative mode — dream big and build it all.",
+      "badge": { "label": "Master Builder", "emoji": "🎨", "color": "#b88cf0" },
+      "items": [
+        "Build your house in creative mode using flying",
+        "Build a 2-story house",
+        "Build a rainbow house",
+        "Build a swimming pool",
+        "Build a chess board",
+        "Build a basilisk",
+        "Build a 20×30, 4-story playhouse",
+        "Build any type of school",
+        "Build all the common rooms from Harry Potter",
+        "Decorate the outside of your build"
+      ]
+    },
+    {
+      "id": "engineering",
+      "emoji": "⚙️",
+      "title": "Engineering Challenges",
+      "blurb": "Simple redstone machines and fun contraptions.",
+      "badge": { "label": "Redstone Engineer", "emoji": "🔧", "color": "#e0625e" },
+      "items": [
+        "Light up a redstone lamp with a lever",
+        "Open an iron door with a button",
+        "Make a door open by stepping on a pressure plate",
+        "Play a tune on note blocks",
+        "Push a block with a piston using a lever",
+        "Pull a block back with a sticky piston",
+        "Make a dispenser shoot an arrow with a button",
+        "Build a rail track and ride a minecart",
+        "Launch your minecart using powered rails",
+        "Feed items into a chest using a hopper"
+      ]
+    },
+    {
+      "id": "imagination",
+      "emoji": "✨",
+      "title": "Imagination Challenges",
+      "blurb": "Build a whole themed world from your imagination.",
+      "badge": { "label": "Dream Weaver", "emoji": "💫", "color": "#f0c45e" },
+      "items": [
+        "Build a pirate ship docked at a tiny island",
+        "Build a candy cottage with a candy garden",
+        "Build a dragon cave with treasure inside",
+        "Build one room of a space station",
+        "Build a dinosaur fossil dig site",
+        "Build a Wild West sheriff’s office",
+        "Build a tiny house on a giant turtle’s shell",
+        "Build one floating cloud castle tower",
+        "Build a secret volcano entrance",
+        "Build a dragon-powered bakery, shop, or blacksmith"
+      ]
+    }
+  ]
+}
