@@ -14,10 +14,8 @@
         "Kill one zombie",
         "Hunt a sheep, a cow, and a chicken for food",
         "Cook 10 food items",
-        "Find a village within 30 minutes",
         "Mine your first iron",
         "Craft a full set of armor",
-        "Mine your first diamonds",
         "Defeat 3 zombies in one night"
       ]
     },
@@ -57,7 +55,26 @@
         "Build a 20×30, 4-story playhouse",
         "Build any type of school",
         "Build all the common rooms from Harry Potter",
-        "Decorate the outside of your build"
+        "Decorate the outside of your build",
+        {
+          "label": "Find all the biomes",
+          "sub": [
+            "Plains",
+            "Forest",
+            "Desert",
+            "Jungle",
+            "Savanna",
+            "Taiga",
+            "Snowy Plains",
+            "Swamp",
+            "Badlands",
+            "Mushroom Fields",
+            "Cherry Grove",
+            "Mangrove Swamp",
+            "Ocean",
+            "Mountains"
+          ]
+        }
       ]
     },
     {

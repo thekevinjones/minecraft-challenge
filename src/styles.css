@@ -419,6 +419,41 @@ html, body {
   font-weight: 900;
 }
 
+/* Sub-checklist (e.g. "Find all the biomes" → individual biomes). */
+.check-group {
+  margin: 6px 0;
+  padding: 12px 10px 6px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--card-border);
+}
+.check-group__title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin: 0 4px 6px;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text);
+}
+.check-group__count {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--badge-color, var(--accent));
+}
+.check-group__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2px;
+}
+.check--sub { padding: 6px 8px; }
+.check--sub .check__box { width: 18px; height: 18px; }
+.check--sub .check__label { font-size: 14px; }
+
 .check__label {
   font-size: 15px;
   color: var(--text);

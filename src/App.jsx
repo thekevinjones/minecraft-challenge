@@ -16,9 +16,19 @@ function loadProgress() {
 }
 
 const itemKey = (catId, itemIdx) => `${catId}.${itemIdx}`
+const subKey = (catId, itemIdx, subIdx) => `${catId}.${itemIdx}.${subIdx}`
 
+// Flatten every leaf checkbox key (sub-items count as their own leaves).
 function categoryKeys(cat) {
-  return cat.items.map((_, ii) => itemKey(cat.id, ii))
+  const keys = []
+  cat.items.forEach((item, ii) => {
+    if (item && Array.isArray(item.sub)) {
+      item.sub.forEach((_, si) => keys.push(subKey(cat.id, ii, si)))
+    } else {
+      keys.push(itemKey(cat.id, ii))
+    }
+  })
+  return keys
 }
 
 export default function App() {
@@ -259,6 +269,41 @@ function ChallengeModal({ cat, progress, toggle, onClose }) {
         <div className="modal__body">
           <ul className="group__list">
             {cat.items.map((item, ii) => {
+              // Sub-checklist item (e.g. "Find all the biomes").
+              if (item && Array.isArray(item.sub)) {
+                const subKeys = item.sub.map((_, si) => subKey(cat.id, ii, si))
+                const subDone = subKeys.filter((k) => progress[k]).length
+                return (
+                  <li key={`${cat.id}.${ii}`} className="check-group">
+                    <p className="check-group__title">
+                      {item.label}
+                      <span className="check-group__count">
+                        {subDone} / {subKeys.length}
+                      </span>
+                    </p>
+                    <ul className="check-group__list">
+                      {item.sub.map((sub, si) => {
+                        const key = subKey(cat.id, ii, si)
+                        const checked = !!progress[key]
+                        return (
+                          <li key={key}>
+                            <label className={`check check--sub ${checked ? 'check--done' : ''}`}>
+                              <input
+                                type="checkbox"
+                                checked={checked}
+                                onChange={() => toggle(key)}
+                              />
+                              <span className="check__box" aria-hidden="true" />
+                              <span className="check__label">{sub}</span>
+                            </label>
+                          </li>
+                        )
+                      })}
+                    </ul>
+                  </li>
+                )
+              }
+
               const key = itemKey(cat.id, ii)
               const checked = !!progress[key]
               return (
